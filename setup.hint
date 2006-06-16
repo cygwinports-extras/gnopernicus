@@ -1,0 +1,5 @@
+category: Gnome
+requires: cygwin GConf2 ORBit2 at-spi atk gnome-mag gnome-speech gtk2-x11 libX11_6 libbonobo2 libgail-gnome libglade2 libgnome2 libgnomeui2 libxml2 minires
+sdesc: "GNOME screen reader and magnifier front-end"
+ldesc: "Frontend for the screen reader, speech, magnifier, and braille 
+accessibility components of the GNOME Desktop"

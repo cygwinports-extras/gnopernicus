@@ -1,0 +1,258 @@
+gnopernicus
+-------------------------------------------
+Frontend for the screen reader, speech, magnifier, and braille
+accessibility components of the GNOME Desktop
+
+Runtime requirements:
+  cygwin-1.5.20-1 (20060604)
+  GConf2-2.14.0-2
+  ORBit2-2.14.0-1
+  at-spi-1.6.6-1
+  atk-1.10.3-1
+  gnome-mag-0.12.5-1
+  gnome-speech-0.4.0-1
+  gtk2-x11-2.8.17-1
+  libX11_6-1.0.0-2
+  libbonobo2-2.14.0-1
+  libgail-gnome-1.1.3-1
+  libglade2-2.5.1-1
+  libgnome2-2.14.1-1
+  libgnomeui2-2.14.1-1
+  libxml2-2.6.24-1
+  minires-1.00-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.20-1 (20060604)
+  autoconf2.5-2.59-2
+  automake1.9-1.9.6-1
+  binutils-20050610-1
+  cygport-0.2.1-1
+  gawk-3.1.5-2
+  gcc-core-3.4.4-1
+  intltool-0.35.0-1
+  libtool1.5-1.5.22-1
+  make-3.80-1
+  pkg-config-0.20-1
+  scrollkeeper-0.3.14-2
+  sed-4.1.4-1
+
+Canonical homepage:
+  http://www.baum.ro/gnopernicus.html
+  http://developer.gnome.org/projects/gap/
+
+Canonical download:
+  ftp://ftp.gnome.org/pub/GNOME/sources/gnopernicus/
+
+-------------------------------------------
+
+Build instructions:
+  unpack gnopernicus-1.0.5-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./gnopernicus-1.0.5-X.cygport all
+
+This will create:
+  /usr/src/gnopernicus-1.0.5-X-src.tar.bz2
+  /usr/src/gnopernicus-1.0.5-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+
+  /etc/gconf/schemas/brlmonitor.schemas
+  /etc/gconf/schemas/gnopernicus.schemas
+  /etc/gconf/schemas/remote.schemas
+  /etc/gnopernicus-1.0/translation_tables/de.a2b
+  /etc/gnopernicus-1.0/translation_tables/en_US.a2b
+  /etc/gnopernicus-1.0/translation_tables/es.a2b
+  /etc/gnopernicus-1.0/translation_tables/sv.a2b
+  /etc/postinstall/gnopernicus.sh
+  /etc/preremove/gnopernicus.sh
+  /usr/bin/cygbrl-5.dll
+  /usr/bin/cygke-5.dll
+  /usr/bin/cygmag-5.dll
+  /usr/bin/cygsrconf-5.dll
+  /usr/bin/cygsrlow-5.dll
+  /usr/bin/cygsrs-5.dll
+  /usr/bin/cygsrutil-5.dll
+  /usr/bin/gnopernicus-mag-config
+  /usr/bin/gnopernicus.exe
+  /usr/bin/srcore.exe
+  /usr/include/gnopernicus-1.0/libbrl/brlxmlapi.h
+  /usr/include/gnopernicus-1.0/libke/libke.h
+  /usr/include/gnopernicus-1.0/libmag/magxmlapi.h
+  /usr/include/gnopernicus-1.0/libsrconf/libsrconf.h
+  /usr/include/gnopernicus-1.0/libsrlow/SRLow.h
+  /usr/include/gnopernicus-1.0/libsrlow/SRObject.h
+  /usr/include/gnopernicus-1.0/libsrlow/screen-review.h
+  /usr/include/gnopernicus-1.0/libsrs/srs-xml.h
+  /usr/include/gnopernicus-1.0/libsrutil/SREvent.h
+  /usr/include/gnopernicus-1.0/libsrutil/SRMessages.h
+  /usr/include/gnopernicus-1.0/libsrutil/srintl.h
+  /usr/include/gnopernicus-1.0/libsrutil/sru-debug.h
+  /usr/include/gnopernicus-1.0/libsrutil/util.h
+  /usr/lib/libbrl.dll.a
+  /usr/lib/libbrl.la
+  /usr/lib/libke.dll.a
+  /usr/lib/libke.la
+  /usr/lib/libmag.dll.a
+  /usr/lib/libmag.la
+  /usr/lib/libsrconf.dll.a
+  /usr/lib/libsrconf.la
+  /usr/lib/libsrlow.dll.a
+  /usr/lib/libsrlow.la
+  /usr/lib/libsrs.dll.a
+  /usr/lib/libsrs.la
+  /usr/lib/libsrutil.dll.a
+  /usr/lib/libsrutil.la
+  /usr/lib/pkgconfig/gnopernicus-1.0.pc
+  /usr/sbin/brlmonitor.exe
+  /usr/share/applications/gnopernicus.desktop
+  /usr/share/doc/Cygwin/gnopernicus-1.0.5.README
+  /usr/share/doc/gnopernicus-1.0.5/AUTHORS
+  /usr/share/doc/gnopernicus-1.0.5/COPYING
+  /usr/share/doc/gnopernicus-1.0.5/ChangeLog
+  /usr/share/doc/gnopernicus-1.0.5/INSTALL
+  /usr/share/doc/gnopernicus-1.0.5/NEWS
+  /usr/share/doc/gnopernicus-1.0.5/README
+  /usr/share/gnome/help/brlmonitor/C/brlmonitor.xml
+  /usr/share/gnome/help/brlmonitor/C/legal.xml
+  /usr/share/gnome/help/brlmonitor/es/brlmonitor.xml
+  /usr/share/gnome/help/brlmonitor/es/legal.xml
+  /usr/share/gnome/help/gnopernicus/C/gnopernicus.xml
+  /usr/share/gnome/help/gnopernicus/C/legal.xml
+  /usr/share/gnome/help/gnopernicus/es/gnopernicus.xml
+  /usr/share/gnome/help/gnopernicus/es/legal.xml
+  /usr/share/gnome/help/gnopernicus/pt_BR/figures/gnopernicus.png
+  /usr/share/gnome/help/gnopernicus/pt_BR/gnopernicus.xml
+  /usr/share/gnome/help/gnopernicus/pt_BR/legal.xml
+  /usr/share/gnopernicus/glade/gnopi_files/Braille_Monitor_Settings/braille_monitor_settings.glade2
+  /usr/share/gnopernicus/glade/gnopi_files/Braille_Settings/attribute_settings.glade2
+  /usr/share/gnopernicus/glade/gnopi_files/Braille_Settings/braille_device.glade2
+  /usr/share/gnopernicus/glade/gnopi_files/Braille_Settings/braille_fill_char.glade2
+  /usr/share/gnopernicus/glade/gnopi_files/Braille_Settings/braille_mapping.glade2
+  /usr/share/gnopernicus/glade/gnopi_files/Braille_Settings/braille_settings.glade2
+  /usr/share/gnopernicus/glade/gnopi_files/Braille_Settings/braille_style.glade2
+  /usr/share/gnopernicus/glade/gnopi_files/Braille_Settings/cursor_settings.glade2
+  /usr/share/gnopernicus/glade/gnopi_files/Braille_Settings/status_cell.glade2
+  /usr/share/gnopernicus/glade/gnopi_files/Braille_Settings/translation_table.glade2
+  /usr/share/gnopernicus/glade/gnopi_files/Find/find.glade2
+  /usr/share/gnopernicus/glade/gnopi_files/Find/text_selected_24.png
+  /usr/share/gnopernicus/glade/gnopi_files/General_Settings/general_settings.glade2
+  /usr/share/gnopernicus/glade/gnopi_files/Keyboard_Mouse_Settings/keyboard_mouse_settings.glade2
+  /usr/share/gnopernicus/glade/gnopi_files/Language/language.glade2
+  /usr/share/gnopernicus/glade/gnopi_files/Load_Default/load_default.glade2
+  /usr/share/gnopernicus/glade/gnopi_files/Magnifier_Settings/magnifier_settings.glade2
+  /usr/share/gnopernicus/glade/gnopi_files/Presentation/presentation.glade2
+  /usr/share/gnopernicus/glade/gnopi_files/Screen_Review/screen_review.glade2
+  /usr/share/gnopernicus/glade/gnopi_files/Speech_Settings/speech_settings.glade2
+  /usr/share/gnopernicus/glade/gnopi_files/User_Properties/user_properties.glade2
+  /usr/share/gnopernicus/glade/gnopi_files/about.glade2
+  /usr/share/gnopernicus/glade/gnopi_files/braille.xpm
+  /usr/share/gnopernicus/glade/gnopi_files/gnopi.glade2
+  /usr/share/gnopernicus/glade/gnopi_files/keyboard.xpm
+  /usr/share/gnopernicus/glade/gnopi_files/monitor.png
+  /usr/share/gnopernicus/glade/gnopi_files/start_up.png
+  /usr/share/gnopernicus/presentation/default.xml
+  /usr/share/gnopernicus/presentation/verbose.xml
+  /usr/share/locale/ar/LC_MESSAGES/gnopernicus.mo
+  /usr/share/locale/az/LC_MESSAGES/gnopernicus.mo
+  /usr/share/locale/be/LC_MESSAGES/gnopernicus.mo
+  /usr/share/locale/bg/LC_MESSAGES/gnopernicus.mo
+  /usr/share/locale/bn/LC_MESSAGES/gnopernicus.mo
+  /usr/share/locale/ca/LC_MESSAGES/gnopernicus.mo
+  /usr/share/locale/cs/LC_MESSAGES/gnopernicus.mo
+  /usr/share/locale/cy/LC_MESSAGES/gnopernicus.mo
+  /usr/share/locale/da/LC_MESSAGES/gnopernicus.mo
+  /usr/share/locale/de/LC_MESSAGES/gnopernicus.mo
+  /usr/share/locale/dz/LC_MESSAGES/gnopernicus.mo
+  /usr/share/locale/el/LC_MESSAGES/gnopernicus.mo
+  /usr/share/locale/en_CA/LC_MESSAGES/gnopernicus.mo
+  /usr/share/locale/en_GB/LC_MESSAGES/gnopernicus.mo
+  /usr/share/locale/es/LC_MESSAGES/gnopernicus.mo
+  /usr/share/locale/et/LC_MESSAGES/gnopernicus.mo
+  /usr/share/locale/eu/LC_MESSAGES/gnopernicus.mo
+  /usr/share/locale/fa/LC_MESSAGES/gnopernicus.mo
+  /usr/share/locale/fi/LC_MESSAGES/gnopernicus.mo
+  /usr/share/locale/fr/LC_MESSAGES/gnopernicus.mo
+  /usr/share/locale/ga/LC_MESSAGES/gnopernicus.mo
+  /usr/share/locale/gl/LC_MESSAGES/gnopernicus.mo
+  /usr/share/locale/gu/LC_MESSAGES/gnopernicus.mo
+  /usr/share/locale/hi/LC_MESSAGES/gnopernicus.mo
+  /usr/share/locale/hr/LC_MESSAGES/gnopernicus.mo
+  /usr/share/locale/hu/LC_MESSAGES/gnopernicus.mo
+  /usr/share/locale/id/LC_MESSAGES/gnopernicus.mo
+  /usr/share/locale/it/LC_MESSAGES/gnopernicus.mo
+  /usr/share/locale/ja/LC_MESSAGES/gnopernicus.mo
+  /usr/share/locale/ko/LC_MESSAGES/gnopernicus.mo
+  /usr/share/locale/lt/LC_MESSAGES/gnopernicus.mo
+  /usr/share/locale/mn/LC_MESSAGES/gnopernicus.mo
+  /usr/share/locale/ms/LC_MESSAGES/gnopernicus.mo
+  /usr/share/locale/nb/LC_MESSAGES/gnopernicus.mo
+  /usr/share/locale/ne/LC_MESSAGES/gnopernicus.mo
+  /usr/share/locale/nl/LC_MESSAGES/gnopernicus.mo
+  /usr/share/locale/no/LC_MESSAGES/gnopernicus.mo
+  /usr/share/locale/pa/LC_MESSAGES/gnopernicus.mo
+  /usr/share/locale/pl/LC_MESSAGES/gnopernicus.mo
+  /usr/share/locale/pt/LC_MESSAGES/gnopernicus.mo
+  /usr/share/locale/pt_BR/LC_MESSAGES/gnopernicus.mo
+  /usr/share/locale/ro/LC_MESSAGES/gnopernicus.mo
+  /usr/share/locale/ru/LC_MESSAGES/gnopernicus.mo
+  /usr/share/locale/rw/LC_MESSAGES/gnopernicus.mo
+  /usr/share/locale/sk/LC_MESSAGES/gnopernicus.mo
+  /usr/share/locale/sq/LC_MESSAGES/gnopernicus.mo
+  /usr/share/locale/sr/LC_MESSAGES/gnopernicus.mo
+  /usr/share/locale/sr@Latn/LC_MESSAGES/gnopernicus.mo
+  /usr/share/locale/sv/LC_MESSAGES/gnopernicus.mo
+  /usr/share/locale/ta/LC_MESSAGES/gnopernicus.mo
+  /usr/share/locale/te/LC_MESSAGES/gnopernicus.mo
+  /usr/share/locale/th/LC_MESSAGES/gnopernicus.mo
+  /usr/share/locale/tr/LC_MESSAGES/gnopernicus.mo
+  /usr/share/locale/uk/LC_MESSAGES/gnopernicus.mo
+  /usr/share/locale/vi/LC_MESSAGES/gnopernicus.mo
+  /usr/share/locale/zh_CN/LC_MESSAGES/gnopernicus.mo
+  /usr/share/locale/zh_TW/LC_MESSAGES/gnopernicus.mo
+  /usr/share/omf/gnopernicus/brlmonitor-C.omf
+  /usr/share/omf/gnopernicus/brlmonitor-es.omf
+  /usr/share/omf/gnopernicus/gnopernicus-C.omf
+  /usr/share/omf/gnopernicus/gnopernicus-es.omf
+  /usr/share/pixmaps/gnopernicus.png
+
+------------------
+
+Port Notes:
+
+----- version 1.0.5-1 -----
+Version bump.
+
+----- version 1.0.4-1 -----
+Version bump.
+
+----- version 1.0.2-1 -----
+Version bump.
+Cygwin build patch has been accepted upstream in this version.
+
+----- version 1.0.1-1 -----
+Version bump.
+
+----- version 1.0.0-1 -----
+Major version bump.
+
+----- version 0.12.0-2 -----
+Rebuilt to generate patch for upstream.
+
+----- version 0.12.0-1 -----
+Version bump.
+
+----- version 0.10.9-1 -----
+Version bump for GNOME 2.10.
+
+----- version 0.9.19-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

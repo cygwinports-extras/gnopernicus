@@ -1,0 +1,4 @@
+inherit gnome2
+
+DESCRIPTION="GNOME screen reader and magnifier front-end"
+HOMEPAGE="http://www.baum.ro/gnopernicus.html"
